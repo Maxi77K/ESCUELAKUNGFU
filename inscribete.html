@@ -22,19 +22,19 @@
   </nav>
 
   <!-- HEADER con formulario dentro -->
-  <header class="hero"> <!--clase hero? html lo entiende no? o es un nombre q le doy yo?--> 
+  <header class="hero">
     <div class="hero-content">
-      <h1>¡Formulario de Inscripción Enviado!</h1>
-      <p class="lema">El profesor Manuel Castro de Long Rinconada se pondra en contacto con usted por telefono o correo electronico durante el dia.</p>
+      <h1>Formulario</h1>
+      <p class="lema">El profesor Manuel Castro de Long Rinconada se pondra en contacto con usted por telefono o correo electronico una vez enviado el formulario.</p>
 
-      <form id="formInscripcion" action="#" method="post" class="form-inscripcion"> <!--que signfica post? action ?-->>
+      <form id="formInscripcion" action="#" method="post" class="form-inscripcion"> 
 
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" 
                placeholder="Ej: Juan Pérez González" 
                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"  
                title="Solo letras y espacios" 
-               required> <!--patern que hace aca? --> 
+               required> 
 
         <label for="rut">RUT:</label>
         <input type="text" id="rut" name="rut" 
@@ -65,7 +65,7 @@
                placeholder="Ej: 987654321" 
                pattern="[0-9]+"  
                title="Solo números" 
-               required> <!--el pattern de aca al aclarar que es solo numeros automaticamente no permitara que hayan numeros al enviar?--> 
+               required> 
 
         <label for="enfermedad">¿Padece alguna enfermedad?</label>
         <textarea id="enfermedad" name="enfermedad" rows="3" 
@@ -74,8 +74,7 @@
         <button type="submit" class="btn btn-primary">Enviar Inscripción</button>
       </form>
       <div id="mensajeConfirmacion" class="alert alert-success mt-3" style="display:none;">
-  Formulario enviado correctamente ✅ <!--pq muestran 2 vece.--> 
-</div>
+  Formulario enviado correctamente ✅ 
     </div>
   </header>
 
@@ -88,4 +87,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
 
-<!--NO ENTENDI, EL DIV ES CONTENEDOR PERO SECTION TAMBIEN PO.-->
+

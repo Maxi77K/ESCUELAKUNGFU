@@ -439,3 +439,23 @@ aside a:hover {
     padding: 15px;
   }
 }
+
+#galeria {
+  columns: 2;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#galeria li {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+#galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
