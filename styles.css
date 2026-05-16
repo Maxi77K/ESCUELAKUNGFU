@@ -8,7 +8,7 @@ html, body {
   background: #b30000;
   color: #fff;
 }
-
+ 
 /* NAV */
 nav {
   background: #b30000;
@@ -19,7 +19,7 @@ nav {
   z-index: 1000;
   border-bottom: 3px solid #ffcc00;
 }
-
+ 
 nav ul {
   list-style: none;
   display: flex;
@@ -28,18 +28,18 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
+ 
 nav li a {
   color: #ffcc00;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
-
+ 
 nav li a:hover {
   color: #fff;
 }
-
+ 
 /* HERO */
 .hero {
   flex: 1;
@@ -50,19 +50,19 @@ nav li a:hover {
   text-align: center;
   padding-top: 90px;
 }
-
+ 
 .hero h1 {
   font-size: 2.5em;
   color: #ffcc00;
   margin-top: 20px;
 }
-
+ 
 .hero p {
   font-size: 1.2em;
   color: #fff;
   margin: 15px 0 25px;
 }
-
+ 
 /* Logo */
 .logo-img {
   width: 220px;
@@ -74,7 +74,7 @@ nav li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
+ 
 /* Botón */
 .btn {
   background: #ffcc00;
@@ -85,17 +85,17 @@ nav li a:hover {
   font-weight: bold;
   transition: 0.3s;
 }
-
+ 
 .btn:hover {
   background: #fff;
   color: #b30000;
 }
-
+ 
 /* MAIN SECTIONS */
 main {
   flex: 1;
 }
-
+ 
 main section {
   background: #800000;
   padding: 40px;
@@ -104,7 +104,7 @@ main section {
   max-width: 1000px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-
+ 
 main h2 {
   color: #ffcc00;
   text-align: center;
@@ -113,28 +113,28 @@ main h2 {
   border-bottom: 2px solid #ffcc00;
   padding-bottom: 10px;
 }
-
+ 
 main h3 {
   color: #ffcc00;
   margin-top: 20px;
   font-size: 1.4em;
 }
-
+ 
 main p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
+ 
 main ul {
   list-style: disc;
   padding-left: 40px;
   margin-bottom: 20px;
 }
-
+ 
 main li {
   margin-bottom: 10px;
 }
-
+ 
 /* Imagen de historia */
 .historia-img {
   display: block;
@@ -144,7 +144,7 @@ main li {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-
+ 
 /* GALERÍA */
 #galeria ul {
   display: flex;
@@ -154,7 +154,7 @@ main li {
   list-style: none;
   padding: 0;
 }
-
+ 
 #galeria img {
   width: 250px;
   border-radius: 10px;
@@ -162,11 +162,11 @@ main li {
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
   transition: transform 0.3s;
 }
-
+ 
 #galeria img:hover {
   transform: scale(1.05);
 }
-
+ 
 /* CARRUSEL */
 #codigo-etico {
   background: #800000;
@@ -176,18 +176,18 @@ main li {
   margin: 40px auto;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-
+ 
 #codigo-etico h2 {
   font-size: 2em;
   border-bottom: 2px solid #ffcc00;
   padding-bottom: 10px;
 }
-
+ 
 #codigo-etico p {
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
+ 
 /* FORMULARIO INSCRIPCIÓN */
 .form-inscripcion {
   background: #800000;
@@ -200,12 +200,12 @@ main li {
   flex-direction: column;
   gap: 15px;
 }
-
+ 
 .form-inscripcion label {
   font-weight: bold;
   color: #fff;
 }
-
+ 
 .form-inscripcion input,
 .form-inscripcion textarea {
   padding: 10px;
@@ -213,7 +213,7 @@ main li {
   border-radius: 5px;
   font-size: 1em;
 }
-
+ 
 .form-inscripcion button.btn {
   background: #ffcc00;
   color: #000;
@@ -224,12 +224,12 @@ main li {
   cursor: pointer;
   transition: 0.3s;
 }
-
+ 
 .form-inscripcion button.btn:hover {
   background: #fff;
   color: #b30000;
 }
-
+ 
 /* FOOTER */
 footer {
   background: #b30000;
@@ -238,220 +238,242 @@ footer {
   padding: 20px;
   border-top: 3px solid #ffcc00;
 }
-
-/* ASIDE */
-aside {
+ 
+/* ====================================================
+   ASIDE: CLIMA (AJAX + JSON)
+   Posicionado fijo a la derecha en escritorio
+   ==================================================== */
+aside#clima-aside {
   position: fixed;
   right: 20px;
   top: 120px;
-  width: 220px;
-  background-color: #b30000;
-  color: #ffcc00;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-aside h3 {
-  margin-top: 0;
-  font-size: 1.2em;
+  width: 230px;
+  background-color: #800000;
+  color: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border: 2px solid #ffcc00;
+  z-index: 999;
   text-align: center;
 }
-
-aside ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ 
+aside#clima-aside h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #ffcc00;
+  border-bottom: 1px solid #ffcc00;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
 }
-
-aside li {
+ 
+/* Ciudad */
+.clima-ciudad {
+  font-size: 0.85em;
+  color: #ffcc00;
+  margin-bottom: 6px;
+}
+ 
+/* Ícono del clima */
+.clima-icono {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+}
+ 
+/* Temperatura grande */
+.clima-temp {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #ffcc00;
+  line-height: 1;
+  margin: 5px 0;
+}
+ 
+/* Descripción (ej: "cielo despejado") */
+.clima-desc {
+  font-size: 0.9em;
+  text-transform: capitalize;
+  color: #fff;
   margin-bottom: 10px;
 }
-
-aside a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+ 
+/* Detalles: sensación, humedad, viento */
+.clima-detalles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.82em;
+  color: #fff;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
-
-aside a:hover {
-  color: #ffffff;
+ 
+/* Texto de actualización */
+.clima-actualizado {
+  font-size: 0.7em;
+  color: #ffcc0099;
+  margin: 0;
 }
-
+ 
 /* ================================
    MEDIA QUERIES
    ================================ */
-
+ 
 /* TABLET (max 768px) */
 @media (max-width: 768px) {
-
-  /* Nav en columna */
+ 
   nav ul {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-
-  /* Hero más compacto */
+ 
   .hero {
     padding-top: 140px;
   }
-
+ 
   .hero h1 {
     font-size: 1.8em;
   }
-
+ 
   .hero p {
     font-size: 1em;
   }
-
-  /* Logo más pequeño */
+ 
   .logo-img {
     width: 150px;
   }
-
-  /* Secciones con menos padding */
+ 
   main section {
     padding: 20px;
     margin: 20px 10px;
   }
-
+ 
   main h2 {
     font-size: 1.5em;
   }
-
+ 
   main h3 {
     font-size: 1.2em;
   }
-
-  /* Galería en columna */
+ 
   #galeria img {
     width: 100%;
     max-width: 300px;
   }
-
-  /* Carrusel */
+ 
   #codigo-etico {
     padding: 20px;
     margin: 20px 10px;
   }
-
-  /* Formulario ocupa todo el ancho */
+ 
   .form-inscripcion {
     max-width: 100%;
     margin: 10px;
     padding: 15px;
   }
-
-  /* Aside baja al flujo normal */
-  aside {
+ 
+  /* Aside clima: baja al flujo normal en tablet/móvil */
+  aside#clima-aside {
     position: static;
     width: 100%;
-    margin-top: 20px;
-    text-align: center;
+    margin: 20px auto;
     box-sizing: border-box;
-  }
-
-  aside ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  aside li {
-    margin-bottom: 0;
+    border-radius: 10px;
   }
 }
-
+ 
 /* CELULAR (max 480px) */
 @media (max-width: 480px) {
-
-  /* Nav más compacto */
+ 
   nav {
     padding: 10px;
   }
-
+ 
   nav ul {
     gap: 8px;
   }
-
+ 
   nav li a {
     font-size: 0.9em;
   }
-
-  /* Hero */
+ 
   .hero {
     padding-top: 160px;
     padding-left: 10px;
     padding-right: 10px;
   }
-
+ 
   .hero h1 {
     font-size: 1.4em;
   }
-
-  /* Logo */
+ 
   .logo-img {
     width: 120px;
   }
-
-  /* Secciones */
+ 
   main section {
     padding: 15px;
     margin: 15px 5px;
     border-radius: 5px;
   }
-
+ 
   main h2 {
     font-size: 1.3em;
   }
-
+ 
   main ul {
     padding-left: 20px;
   }
-
-  /* Galería en columna completa */
+ 
   #galeria ul {
     flex-direction: column;
     align-items: center;
   }
-
+ 
   #galeria img {
     width: 100%;
   }
-
-  /* Formulario */
+ 
   .form-inscripcion {
     padding: 10px;
     gap: 10px;
   }
-
+ 
   .form-inscripcion input,
   .form-inscripcion textarea {
     font-size: 0.95em;
   }
-
-  /* Footer */
+ 
   footer {
     font-size: 0.85em;
     padding: 15px;
   }
+ 
+  aside#clima-aside {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
 }
-
+ 
 #galeria {
   columns: 2;
   gap: 15px;
   list-style: none;
   padding: 0;
 }
-
+ 
 #galeria li {
   break-inside: avoid;
   margin-bottom: 15px;
 }
-
+ 
 #galeria img {
   width: 100%;
   height: auto;
